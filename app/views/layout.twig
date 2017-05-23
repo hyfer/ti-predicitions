@@ -1,0 +1,22 @@
+<html>
+	<head>
+	{% block head %}
+		<title>{% block title %}{% endblock %}</title>
+		<!-- Latest compiled and minified CSS -->
+		<!-- Optional theme -->
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+	{% endblock %}
+	</head>
+	<body>
+
+		{% block body %}
+		{% endblock %}
+		<script src="/app.js"></script>
+	</body>
+</html>
