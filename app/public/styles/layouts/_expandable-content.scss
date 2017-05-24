@@ -1,0 +1,10 @@
+.expandable-content {
+	display: none;
+	position: absolute;
+	right: 0;
+	padding: 30px;
+	width: 30vw;
+	height: 100%;
+	z-index: 1;
+	background-color: $white;
+}

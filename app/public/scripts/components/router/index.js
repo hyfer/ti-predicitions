@@ -13,9 +13,7 @@ export default class AppRoutes extends Component {
       <div>
         <Provider history={browserHistory} store={store}>
           <Router>
-              <div>
                 <Route exact path="/" component={Home} />
-              </div>
           </Router>
         </Provider>
       </div>

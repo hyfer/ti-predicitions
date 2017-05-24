@@ -1,3 +1,15 @@
 h1, h2, h3 {
+	font-family: $alt-font-family;
+}
+
+p {
+	font-size: rem(14);
 	font-family: $base-font-family;
+	font-weight: 400;
+}
+
+a {
+	font-size: rem(14);
+	font-family: $base-font-family;
+	font-weight: 400;
 }

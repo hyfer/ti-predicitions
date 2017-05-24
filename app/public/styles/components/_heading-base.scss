@@ -1,0 +1,17 @@
+.heading-base {
+	&.-large {
+		font-size: rem(25);
+		font-weight: 500;
+		text-transform: uppercase;
+
+		@include breakpoint(small) {
+			font-size: rem(60);
+		}
+	}
+
+	&.-small {
+		font-size: rem(24);
+		font-weight: 700;
+		font-family: $base-font-family;
+	}
+}

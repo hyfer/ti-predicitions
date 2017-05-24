@@ -5,7 +5,7 @@
 **install dependencies**
 
 ``` 
-npm install
+yarn or npm install
 ```
 
 **start server**

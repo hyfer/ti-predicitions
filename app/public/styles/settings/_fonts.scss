@@ -1,0 +1,179 @@
+// Simplon normal
+@font-face {
+  font-family: 'simplon-normal';
+  src: url('../static/fonts/simplon-normal/bold/simplon-normal-bold.eot');
+  src: url('../static/fonts/simplon-normal/bold/simplon-normal-bold.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-normal/bold/simplon-normal-bold.woff') format('woff'),
+       url('../static/fonts/simplon-normal/bold/simplon-normal-bold.ttf') format('truetype'),
+       url('../static/fonts/simplon-normal/bold/simplon-normal-bold.svg#simplon-normal-bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'simplon-normal';
+  src: url('../static/fonts/simplon-normal/bold-italic/simplon-normal-bold-italic.eot');
+  src: url('../static/fonts/simplon-normal/bold-italic/simplon-normal-bold-italic.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-normal/bold-italic/simplon-normal-bold-italic.woff') format('woff'),
+       url('../static/fonts/simplon-normal/bold-italic/simplon-normal-bold-italic.ttf') format('truetype'),
+       url('../static/fonts/simplon-normal/bold-italic/simplon-normal-bold-italic.svg#simplon-bold-italic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'simplon-normal';
+  src: url('../static/fonts/simplon-normal/light/simplon-normal-light.eot');
+  src: url('../static/fonts/simplon-normal/light/simplon-normal-light.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-normal/light/simplon-normal-light.woff') format('woff'),
+       url('../static/fonts/simplon-normal/light/simplon-normal-light.ttf') format('truetype'),
+       url('../static/fonts/simplon-normal/light/simplon-normal-light.svg#simplon-normal-light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'simplon-normal';
+  src: url('../static/fonts/simplon-normal/light-italic/simplon-normal-light-italic.eot');
+  src: url('../static/fonts/simplon-normal/light-italic/simplon-normal-light-italic.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-normal/light-italic/simplon-normal-light-italic.woff') format('woff'),
+       url('../static/fonts/simplon-normal/light-italic/simplon-normal-light-italic.ttf') format('truetype'),
+       url('../static/fonts/simplon-normal/light-italic/simplon-normal-light-italic.svg#simplon-normal-light-italic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'simplon-normal';
+  src: url('../static/fonts/simplon-normal/medium/simplon-normal-medium.eot');
+  src: url('../static/fonts/simplon-normal/medium/simplon-normal-medium.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-normal/medium/simplon-normal-medium.woff') format('woff'),
+       url('../static/fonts/simplon-normal/medium/simplon-normal-medium.ttf') format('truetype'),
+       url('../static/fonts/simplon-normal/medium/simplon-normal-medium.svg#simplon-normal-medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'simplon-normal';
+  src: url('../static/fonts/simplon-normal/medium-italic/simplon-normal-medium-italic.eot');
+  src: url('../static/fonts/simplon-normal/medium-italic/simplon-normal-medium-italic.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-normal/medium-italic/simplon-normal-medium-italic.woff') format('woff'),
+       url('../static/fonts/simplon-normal/medium-italic/simplon-normal-medium-italic.ttf') format('truetype'),
+       url('../static/fonts/simplon-normal/medium-italic/simplon-normal-medium-italic.svg#simplon-normal-medium-italic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'simplon-normal';
+  src: url('../static/fonts/simplon-normal/regular/simplon-normal-regular.eot');
+  src: url('../static/fonts/simplon-normal/regular/simplon-normal-regular.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-normal/regular/simplon-normal-regular.woff') format('woff'),
+       url('../static/fonts/simplon-normal/regular/simplon-normal-regular.ttf') format('truetype'),
+       url('../static/fonts/simplon-normal/regular/simplon-normal-regular.svg#simplon-normal-regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'simplon-normal';
+  src: url('../static/fonts/simplon-normal/regular-italic/simplon-normal-regular-italic.eot');
+  src: url('../static/fonts/simplon-normal/regular-italic/simplon-normal-regular-italic.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-normal/regular-italic/simplon-normal-regular-italic.woff') format('woff'),
+       url('../static/fonts/simplon-normal/regular-italic/simplon-normal-regular-italic.ttf') format('truetype'),
+       url('../static/fonts/simplon-normal/regular-italic/simplon-normal-regular-italic.svg#simplon-normal-regular-italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+// Simplon mono
+@font-face {
+  font-family: 'simplon-mono';
+  src: url('../static/fonts/simplon-mono/bold/simplon-mono-bold.eot');
+  src: url('../static/fonts/simplon-mono/bold/simplon-mono-bold.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-mono/bold/simplon-mono-bold.woff') format('woff'),
+       url('../static/fonts/simplon-mono/bold/simplon-mono-bold.ttf') format('truetype'),
+       url('../static/fonts/simplon-mono/bold/simplon-mono-bold.svg#simplon-mono-bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'simplon-mono';
+  src: url('../static/fonts/simplon-mono/bold-italic/simplon-mono-bold-italic.eot');
+  src: url('../static/fonts/simplon-mono/bold-italic/simplon-mono-bold-italic.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-mono/bold-italic/simplon-mono-bold-italic.woff') format('woff'),
+       url('../static/fonts/simplon-mono/bold-italic/simplon-mono-bold-italic.ttf') format('truetype'),
+       url('../static/fonts/simplon-mono/bold-italic/simplon-mono-bold-italic.svg#simplon-mono-bold-italic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'simplon-mono';
+  src: url('../static/fonts/simplon-mono/light/simplon-mono-light.eot');
+  src: url('../static/fonts/simplon-mono/light/simplon-mono-light.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-mono/light/simplon-mono-light.woff') format('woff'),
+       url('../static/fonts/simplon-mono/light/simplon-mono-light.ttf') format('truetype'),
+       url('../static/fonts/simplon-mono/light/simplon-mono-light.svg#simplon-mono-light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'simplon-mono';
+  src: url('../static/fonts/simplon-mono/light-italic/simplon-mono-light-italic.eot');
+  src: url('../static/fonts/simplon-mono/light-italic/simplon-mono-light-italic.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-mono/light-italic/simplon-mono-light-italic.woff') format('woff'),
+       url('../static/fonts/simplon-mono/light-italic/simplon-mono-light-italic.ttf') format('truetype'),
+       url('../static/fonts/simplon-mono/light-italic/simplon-mono-light-italic.svg#simplon-mono-light-italic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'simplon-mono';
+  src: url('../static/fonts/simplon-mono/medium/simplon-mono-medium.eot');
+  src: url('../static/fonts/simplon-mono/medium/simplon-mono-medium.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-mono/medium/simplon-mono-medium.woff') format('woff'),
+       url('../static/fonts/simplon-mono/medium/simplon-mono-medium.ttf') format('truetype'),
+       url('../static/fonts/simplon-mono/medium/simplon-mono-medium.svg#simplon-mono-medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'simplon-mono';
+  src: url('../static/fonts/simplon-mono/medium-italic/simplon-mono-medium-italic.eot');
+  src: url('../static/fonts/simplon-mono/medium-italic/simplon-mono-medium-italic.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-mono/medium-italic/simplon-mono-medium-italic.woff') format('woff'),
+       url('../static/fonts/simplon-mono/medium-italic/simplon-mono-medium-italic.ttf') format('truetype'),
+       url('../static/fonts/simplon-mono/medium-italic/simplon-mono-medium-italic.svg#simplon-mono-medium-italic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'simplon-mono';
+  src: url('../static/fonts/simplon-mono/regular/simplon-mono-regular.eot');
+  src: url('../static/fonts/simplon-mono/regular/simplon-mono-regular.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-mono/regular/simplon-mono-regular.woff') format('woff'),
+       url('../static/fonts/simplon-mono/regular/simplon-mono-regular.ttf') format('truetype'),
+       url('../static/fonts/simplon-mono/regular/simplon-mono-regular.svg#simplon-mono-regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'simplon-mono';
+  src: url('../static/fonts/simplon-mono/regular-italic/simplon-mono-regular-italic.eot');
+  src: url('../static/fonts/simplon-mono/regular-italic/simplon-mono-regular-italic.eot?#iefix') format('embedded-opentype'),
+       url('../static/fonts/simplon-mono/regular-italic/simplon-mono-regular-italic.woff') format('woff'),
+       url('../static/fonts/simplon-mono/regular-italic/simplon-mono-regular-italic.ttf') format('truetype'),
+       url('../static/fonts/simplon-mono/regular-italic/simplon-mono-regular-italic.svg#simplon-mono-regular-italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}

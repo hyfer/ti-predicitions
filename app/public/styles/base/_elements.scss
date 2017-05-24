@@ -1,0 +1,12 @@
+button {
+	padding: 0;
+	background-color: transparent;
+	
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
