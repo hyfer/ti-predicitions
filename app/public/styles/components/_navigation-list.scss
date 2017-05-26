@@ -1,0 +1,8 @@
+.navigation-list {
+	list-style: none;
+
+	> .item {
+		display: inline-block;
+		margin-left: 30px;
+	}
+}

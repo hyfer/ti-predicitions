@@ -5,9 +5,9 @@ class CaseContent extends Component {
 
   render() {
     return (
-      <div className="component-wrapper">
+      <div className="case-content">
         <h3 className="heading-base -small">Redesign of Semcon.com</h3>
-        <a href="#" className="link-text -case">Learn more</a>
+        <a href="#" className="link link-text">Learn more</a>
       </div>
     );
   }

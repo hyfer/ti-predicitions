@@ -1,5 +1,6 @@
 import React from 'react';
 
+import NavigationContent from './../components/navigation-content';
 import HeroContent from './../components/hero-content';
 import VideoPlayer from './../components/video-player';
 import CaseContent from './../components/case-content';
@@ -20,12 +21,23 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <div className="hero-section">
-          <div className="hero-content">
+        <div className="top-navigation">
+          <div className="inner">
             <div className="container">
               <div className="row">
                 <div className="col col-9">
-                  <HeroContent/>
+                  <NavigationContent />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="hero-section">
+          <div className="inner">
+            <div className="container">
+              <div className="row">
+                <div className="col col-9">
+                  <HeroContent />
                 </div>
               </div>
             </div>
@@ -33,7 +45,7 @@ class Home extends React.Component {
           <VideoPlayer/>
         </div>
         <div className="case-section">
-          <div className="case-content">
+          <div className="inner">
             <div className="container">
               <div className="row">
                 <div className="col col-9">

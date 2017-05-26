@@ -4,15 +4,11 @@
 	@include viewport-unit(height, 100vh);
 	overflow: hidden;
 
-	> .case-content {
+	> .inner {
 		position: absolute;
 		bottom: 50px;
 		z-index: 1;
 		width: 100%;
-	}
-
- 	.link-text {
- 		display: block;
-		margin-top: 15px;
+		color: $text-color-inverted;
 	}
 }
