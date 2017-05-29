@@ -1,20 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-import NavigationContent from './../components/navigation-content';
-import HeroContent from './../components/hero-content';
-import VideoPlayer from './../components/video-player';
-import CaseContent from './../components/case-content';
-import ExpandableContent from './../components/expandable-content';
-import Image from './../components/image';
-import Footer from './../components/footer';
+import Navigation from './../components/Navigation';
+import HeroContent from './../components/HeroContent';
+import VideoPlayer from './../components/VideoPlayer';
+import CaseContent from './../components/CaseContent';
+import ExpandableContent from './../components/ExpandableContent';
+import Image from './../components/Image';
 
-class Home extends React.Component {
+class Home extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
-      videoURL: 'https://player.vimeo.com/video/38840688?autoplay=1&loop=1&autopause=0?background=1'
+      videoURL: 'https://player.vimeo.com/video/38840688?autoplay=1&loop=1&autopause=0?background=1',
     };
   }
 
@@ -26,7 +25,7 @@ class Home extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="col col-9">
-                  <NavigationContent />
+                  <Navigation />
                 </div>
               </div>
             </div>
@@ -42,7 +41,7 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
-          <VideoPlayer/>
+          <VideoPlayer />
         </div>
         <div className="case-section">
           <div className="inner">
@@ -58,7 +57,7 @@ class Home extends React.Component {
           <Image />
         </div>
       </div>
-    )
+    );
   }
 }
 
