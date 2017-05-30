@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import NavigationCollapsedContainer from './NavigationCollapsedContainer';
-import NavigationList from './../components/NavigationList';
-import { Logo, LogoText } from './../components/SvgImages';
+import MenuButtonContainer from '../MenuButton';
+import NavigationHorizontal from '../../components/NavigationHorizontal';
+import { Logo, LogoText } from '../../components/SvgImages';
 
-class NavigationContainer extends Component {
+class MenuTopContainer extends Component {
 
   constructor(props) {
     super(props);
@@ -37,28 +37,28 @@ class NavigationContainer extends Component {
   }
 
   render() {
-    let navigationType = null;
-    let logoType = null;
+    let menuRight = null;
+    let menuLeft = null;
 
     if (this.state.isCollapsed) {
-      navigationType = <NavigationCollapsedContainer />;
-      logoType = <Logo />;
+      menuRight = <MenuButtonContainer />;
+      menuLeft = <Logo />;
     } else {
-      navigationType = <NavigationList />;
-      logoType = <LogoText />;
+      menuRight = <NavigationHorizontal />;
+      menuLeft = <LogoText />;
     }
 
     return (
-      <div className="navigation-content">
+      <div className="menu-top-content">
         <div className="left">
-          {logoType}
+          {menuLeft}
         </div>
         <div className="right">
-          {navigationType}
+          {menuRight}
         </div>
       </div>
     );
   }
 }
 
-export default NavigationContainer;
+export default MenuTopContainer;

@@ -1,4 +1,13 @@
 .link-text {
+	position: relative;
 	color: $white;
 	text-decoration: none;
+
+	&.-medium {
+		font-size: rem(24);
+	}
+
+	&.-large {
+		font-size: rem(50);
+	}
 }

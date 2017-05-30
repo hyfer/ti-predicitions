@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import NavigationContainer from './NavigationContainer';
-
-import HeroContent from './../components/HeroContent';
-import VideoPlayer from './../components/VideoPlayer';
-import CaseContent from './../components/CaseContent';
-import ExpandableContent from './../components/ExpandableContent';
-import Image from './../components/Image';
+import MenuTop from '../MenuTop';
+import MenuOverlay from '../MenuOverlay';
+import HeroContent from '../../components/HeroContent';
+import VideoPlayer from '../../components/VideoPlayer';
+import CaseContent from '../../components/CaseContent';
+import ExpandableContent from '../../components/ExpandableContent';
+import Image from '../../components/Image';
 
 class Home extends Component {
 
@@ -21,19 +21,21 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div className="top-navigation">
+        <div className="menu-top">
           <div className="inner">
             <div className="container">
               <div className="row">
                 <div className="col col-9">
-                  <NavigationContainer />
+                  <MenuTop />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="overlay-navigation">
-          <p>Menu</p>
+        <div className="menu-overlay">
+          <div className="inner">
+            <MenuOverlay />
+          </div>
         </div>
         <div className="hero-section">
           <div className="inner">

@@ -1,42 +1,26 @@
 .badge-inline {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 16px; 
-    height: 9px;
-    background-color: $badge-color;
+    top: -15px;
+    right: -15px;
+    width: 15px; 
+    height: 17px;
+    background-image: url('/images/hexagon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     text-align: center;
+    color: $text-color;
     font-size: rem(11);
     font-family: $base-font-family;
     font-weight: 700;
+    pointer-events: none;
 
     > .number {
         position: absolute;
-        top: -1px;
-        left: 6px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
         z-index: 1;
-    }
-
-    &:before,
-    &:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-    }
-
-    &:before {
-        bottom: 100%;
-        margin-left: -8px;
-        border-bottom: 4px solid $badge-color;
-    }
-
-    &:after {
-        top: 100%;
-        margin-left: -8px;
-        border-top: 4px solid $badge-color;
-        width: 0;
+        line-height: 1;
     }
 }

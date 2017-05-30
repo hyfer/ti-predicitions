@@ -1,0 +1,15 @@
+.navigation-vertical {
+	list-style: none;
+
+	> .item {
+		position: relative;
+	}
+
+	> .item + .item {
+		margin-top: 30px;
+
+		&:last-child {
+			margin-top: 40px;
+		}
+	}
+}

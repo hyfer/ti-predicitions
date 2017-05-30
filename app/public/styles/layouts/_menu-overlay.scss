@@ -1,4 +1,4 @@
-.overlay-navigation {
+.menu-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -6,4 +6,11 @@
 	right: 0;
 	z-index: 2;
 	background-color: $navigation-background;
+
+	> .inner {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		transform: translateY(-50%);
+	}
 }

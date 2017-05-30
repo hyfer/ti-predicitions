@@ -1,14 +1,7 @@
-const initialState = {
-  fetching: false,
-  fetched: false,
-  error: null,
+import pageData from './menuOverlay';
+
+const reducers = {
+  pageData,
 };
 
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
-
-export default reducer;
+export default reducers;

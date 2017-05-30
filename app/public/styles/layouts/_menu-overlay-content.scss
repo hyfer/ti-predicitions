@@ -1,0 +1,18 @@
+.menu-overlay-content {
+	> .left {
+		display: inline-block;
+		vertical-align: top;
+		width: calc(50% - 50px); // -50px because right has margin-left 100px
+		text-align: right;
+		font-size: rem(24);
+		color: $text-color-inverted;
+		opacity: 0.2;
+	}
+
+	> .right {
+		display: inline-block;
+		margin-left: 100px;
+		width: calc(50% - 50px); // -50px because margin-left 100px
+		text-align: left;
+	}
+}

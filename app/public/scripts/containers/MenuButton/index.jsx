@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+import bindActionCreators from 'redux';
+import connect from 'react-redux';
 
-class NavigationCollapsedContainer extends Component {
+import menuOverlay from '../../redux/actions/menuOverlay';
 
+class MenuButtonContainer extends Component {
   constructor(props) {
     super(props);
 
@@ -19,7 +22,7 @@ class NavigationCollapsedContainer extends Component {
   render() {
     return (
       <button
-        className={this.state.isActive ? 'navigation-button -active' : 'navigation-button'}
+        className={`menu-button ${this.state.isActive ? '-active' : ''}`}
         onClick={this.onClick}
       >
         <div className="top" />
@@ -29,4 +32,4 @@ class NavigationCollapsedContainer extends Component {
   }
 }
 
-export default NavigationCollapsedContainer;
+export default MenuButtonContainer;
