@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import Navigation from './../components/Navigation';
+import NavigationContainer from './NavigationContainer';
+
 import HeroContent from './../components/HeroContent';
 import VideoPlayer from './../components/VideoPlayer';
 import CaseContent from './../components/CaseContent';
@@ -25,11 +26,14 @@ class Home extends Component {
             <div className="container">
               <div className="row">
                 <div className="col col-9">
-                  <Navigation />
+                  <NavigationContainer />
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="overlay-navigation">
+          <p>Menu</p>
         </div>
         <div className="hero-section">
           <div className="inner">

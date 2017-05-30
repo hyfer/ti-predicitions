@@ -6,13 +6,19 @@ $alt-font-family: 'simplon-mono', Helvetica, Arial;
 $black: #000000;
 $white: #ffffff;
 $yellow: #FFF700;
+$dark-grey: #22211f;
 
 /* Functional variables */
 $text-color: $black;
 $text-color-inverted: $white;
 
+$logo-color: $white;
+
+$button-navigation-color: $white;
 $button-primary-color: $yellow;
 $badge-color: $yellow;
+
+$navigation-background: $dark-grey;
 
 /* Layout variables */
 $base-gutter-lg: 40px;
