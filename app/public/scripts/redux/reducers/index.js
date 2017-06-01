@@ -1,7 +1,7 @@
-import pageData from './menuOverlay';
+import menuOverlay from './menuOverlay';
 
 const reducers = {
-  pageData,
+  menuOverlay,
 };
 
 export default reducers;

@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 // import thunk from 'redux-thunk';
 import store from './../../redux/store';
 
-import Home from './../../containers/Home';
+import Home from './../../containers/HomeContainer';
 
 const AppRoutes = () => (
   <div>

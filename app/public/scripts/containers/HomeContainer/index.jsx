@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import MenuTop from '../MenuTop';
-import MenuOverlay from '../MenuOverlay';
+import MenuTop from '../MenuTopContainer';
+import MenuOverlay from '../MenuOverlayContainer';
 import HeroContent from '../../components/HeroContent';
 import VideoPlayer from '../../components/VideoPlayer';
 import CaseContent from '../../components/CaseContent';

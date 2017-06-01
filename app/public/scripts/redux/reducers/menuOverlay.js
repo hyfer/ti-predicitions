@@ -1,22 +1,17 @@
 import {
-  MENU_OVERLAY_IS_OPEN,
-  MENU_OVERLAY_IS_CLOSED,
+  MENU_OVERLAY_IS_TOGGLED,
 } from '../../constants/actionTypes';
 
-const initialState = {};
+const initialState = {
+  isToggled: false,
+};
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case MENU_OVERLAY_IS_OPEN:
+    case MENU_OVERLAY_IS_TOGGLED:
       return {
         ...state,
-        ...action,
-      };
-
-    case MENU_OVERLAY_IS_CLOSED:
-      return {
-        ...state,
-        ...action,
+        isToggled: !state.isToggled,
       };
 
     default:

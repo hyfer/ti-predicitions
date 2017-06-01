@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import NavigationVertical from '../../components/NavigationVertical';
 
-class MenuOverlayContainer extends Component {
+class MenuOverlay extends Component {
 
   constructor(props) {
     super(props);
@@ -29,4 +29,4 @@ class MenuOverlayContainer extends Component {
   }
 }
 
-export default MenuOverlayContainer;
+export default MenuOverlay;

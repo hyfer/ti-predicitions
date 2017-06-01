@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import MenuButtonContainer from '../MenuButton';
+import MenuButtonContainer from '../MenuButtonContainer';
 import NavigationHorizontal from '../../components/NavigationHorizontal';
 import { Logo, LogoText } from '../../components/SvgImages';
 
-class MenuTopContainer extends Component {
+class MenuTop extends Component {
 
   constructor(props) {
     super(props);
@@ -61,4 +61,4 @@ class MenuTopContainer extends Component {
   }
 }
 
-export default MenuTopContainer;
+export default MenuTop;
