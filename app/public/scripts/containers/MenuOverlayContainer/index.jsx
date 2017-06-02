@@ -1,32 +1,23 @@
-import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
-import NavigationVertical from '../../components/NavigationVertical';
+import toggleMenuOverlay from '../../redux/actions/menuOverlay';
 
-class MenuOverlay extends Component {
+import MenuOverlay from '../../components/MenuOverlay';
 
-  constructor(props) {
-    super(props);
+const mapStateToProps = state => ({
+  isToggled: state.menuOverlay.isToggled,
+});
 
-    this.state = {
-      isCollapsed: false,
-    };
-  }
+const mapDispatchToProps = dispatch => (
+  bindActionCreators({
+    toggleMenuOverlay,
+  }, dispatch)
+);
 
-  onScroll = () => {
-  }
+const MenuOverlayContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(MenuOverlay);
 
-  render() {
-    return (
-      <div className="menu-overlay-content">
-        <div className="left">
-          Navigate
-        </div>
-        <div className="right">
-          <NavigationVertical />
-        </div>
-      </div>
-    );
-  }
-}
-
-export default MenuOverlay;
+export default MenuOverlayContainer;

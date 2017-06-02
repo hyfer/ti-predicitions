@@ -15,8 +15,10 @@ class MenuButton extends Component {
 
   onClick = () => {
     if (this.props.isToggled) {
+      document.body.style.overflow = 'visible';
       this.props.toggleMenuOverlay();
     } else {
+      document.body.style.overflow = 'hidden';
       this.props.toggleMenuOverlay();
     }
   };

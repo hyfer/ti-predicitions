@@ -4,10 +4,19 @@
 	text-decoration: none;
 
 	&.-medium {
-		font-size: rem(24);
+		font-size: rem(18);
+
+		@include breakpoint(small) {
+			font-size: rem(24);
+		}
+
 	}
 
 	&.-large {
-		font-size: rem(50);
+		font-size: rem(25);
+		
+		@include breakpoint(small) {
+			font-size: rem(50);
+		}
 	}
 }

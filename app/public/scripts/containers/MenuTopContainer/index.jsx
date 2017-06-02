@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import MenuButtonContainer from '../MenuButtonContainer';
 import NavigationHorizontal from '../../components/NavigationHorizontal';
 import { Logo, LogoText } from '../../components/SvgImages';
+import getScreenWidth from '../../utils/getScreenWidth';
+import debounce from '../../utils/debounce';
 
 class MenuTop extends Component {
 
@@ -10,28 +12,52 @@ class MenuTop extends Component {
     super(props);
 
     this.state = {
-      isCollapsed: false,
+      isCollapsed: true,
+      scrollPosition: 0,
     };
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.onScroll);
+    this.checkScrollPosition();
+    window.addEventListener('scroll', debounce(this.onScroll, 100));
+    window.addEventListener('resize', debounce(this.onResize, 100));
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.onScroll);
+    window.addEventListener('resize', this.onResize);
+  }
+
+  onResize = () => {
+    this.setState({
+      scrollPosition: window.pageYOffset || document.documentElement.scrollTop,
+    });
+
+    if (getScreenWidth().lg) {
+      this.checkScrollPosition();
+      window.addEventListener('scroll', this.onScroll);
+    } else {
+      this.checkScrollPosition();
+      window.removeEventListener('scroll', this.onScroll);
+    }
   }
 
   onScroll = () => {
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    this.setState({
+      scrollPosition: window.pageYOffset || document.documentElement.scrollTop,
+    });
 
-    if (scrollPosition >= 50) {
+    this.checkScrollPosition();
+  }
+
+  checkScrollPosition = () => {
+    if (this.state.scrollPosition <= 50 && getScreenWidth().lg) {
       this.setState({
-        isCollapsed: true,
+        isCollapsed: false,
       });
     } else {
       this.setState({
-        isCollapsed: false,
+        isCollapsed: true,
       });
     }
   }

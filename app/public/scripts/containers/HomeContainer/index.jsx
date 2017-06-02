@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import MenuTop from '../MenuTopContainer';
-import MenuOverlay from '../MenuOverlayContainer';
+import MenuTopContainer from '../MenuTopContainer';
+import MenuOverlayContainer from '../MenuOverlayContainer';
 import HeroContent from '../../components/HeroContent';
 import VideoPlayer from '../../components/VideoPlayer';
 import CaseContent from '../../components/CaseContent';
@@ -21,20 +21,16 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <MenuOverlayContainer />
         <div className="menu-top">
           <div className="inner">
             <div className="container">
               <div className="row">
                 <div className="col col-9">
-                  <MenuTop />
+                  <MenuTopContainer />
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="menu-overlay">
-          <div className="inner">
-            <MenuOverlay />
           </div>
         </div>
         <div className="hero-section">

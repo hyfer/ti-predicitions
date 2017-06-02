@@ -6,6 +6,8 @@ const initialState = {
   isToggled: false,
 };
 
+// TODO: Add state for isClosing and isOpening. Might be useful for animations.
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case MENU_OVERLAY_IS_TOGGLED:
