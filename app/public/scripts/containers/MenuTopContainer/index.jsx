@@ -18,7 +18,7 @@ class MenuTop extends Component {
   }
 
   componentDidMount() {
-    this.checkScrollPosition();
+    this.checkScrollPosition(); // Check initial scroll position
     window.addEventListener('scroll', debounce(this.onScroll, 100));
     window.addEventListener('resize', debounce(this.onResize, 100));
   }
@@ -29,10 +29,12 @@ class MenuTop extends Component {
   }
 
   onResize = () => {
+    /* Set scroll position on resize */
     this.setState({
       scrollPosition: window.pageYOffset || document.documentElement.scrollTop,
     });
 
+    /* Check viewport size and add scroll event on desktop, otherwise remove it */
     if (getScreenWidth().lg) {
       this.checkScrollPosition();
       window.addEventListener('scroll', this.onScroll);
@@ -43,6 +45,7 @@ class MenuTop extends Component {
   }
 
   onScroll = () => {
+    /* Set scroll position on scroll */
     this.setState({
       scrollPosition: window.pageYOffset || document.documentElement.scrollTop,
     });
@@ -50,6 +53,7 @@ class MenuTop extends Component {
     this.checkScrollPosition();
   }
 
+  /* Check wether scroll is in top of viewport and viewport size is desktop. Should always be collapsed on devices smallar than desktop */
   checkScrollPosition = () => {
     if (this.state.scrollPosition <= 50 && getScreenWidth().lg) {
       this.setState({
