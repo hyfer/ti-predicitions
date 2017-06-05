@@ -1,4 +1,23 @@
 .heading-base {
+
+	&.-striked {
+		display: inline-block;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: -5px;
+			z-index: -1;
+			width: calc(100% + 10px);
+			height: 4px;
+			transform: translateY(-50%);
+			background-color: $striked-color;
+
+		}
+	}
+
 	&.-large {
 		font-size: rem(25);
 		font-weight: 500;
@@ -12,6 +31,12 @@
 	&.-small {
 		font-size: rem(24);
 		font-weight: 700;
+		font-family: $base-font-family;
+	}
+
+	&.-xsmall {
+		font-size: rem(14);
+		font-weight: 400;
 		font-family: $base-font-family;
 	}
 }

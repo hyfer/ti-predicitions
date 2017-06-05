@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import MenuTopContainer from '../MenuTopContainer';
 import MenuOverlayContainer from '../MenuOverlayContainer';
+import CaseContentContainer from '../CaseContentContainer';
+import ExpandableContentContainer from '../ExpandableContentContainer';
 import HeroContent from '../../components/HeroContent';
 import VideoPlayer from '../../components/VideoPlayer';
-import CaseContent from '../../components/CaseContent';
-import ExpandableContent from '../../components/ExpandableContent';
 import Image from '../../components/Image';
 
 class Home extends Component {
@@ -50,12 +50,12 @@ class Home extends Component {
             <div className="container">
               <div className="row">
                 <div className="col col-9">
-                  <CaseContent />
+                  <CaseContentContainer />
                 </div>
               </div>
             </div>
           </div>
-          <ExpandableContent />
+          <ExpandableContentContainer />
           <Image />
         </div>
       </div>

@@ -5,16 +5,23 @@ $alt-font-family: 'simplon-mono', Helvetica, Arial;
 /* Descriptive variables (colors) */
 $black: #000000;
 $white: #ffffff;
-$yellow: #FFF700;
+$yellow: #fff700;
+$light-grey: #dddddd;
 $dark-grey: #22211f;
 
 /* Functional variables */
 $text-color: $black;
+$text-color-grey: $dark-grey;
 $text-color-inverted: $white;
+$striked-color: $yellow;
 
 $logo-color: $white;
 
-$button-navigation-color: $white;
+$button-toggle-color: $white;
+$button-toggle-color-inverted: $black;
+$button-link-border: $light-grey;
+$button-link-hover-color: $yellow;
+
 $button-primary-color: $yellow;
 $badge-color: $yellow;
 

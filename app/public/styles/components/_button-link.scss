@@ -1,0 +1,41 @@
+.button-link {
+	position: relative;
+	border: 1px solid $button-link-border;
+	padding: 20px;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+
+	&:hover {
+		&:before {
+			width: calc(100% + 100px);
+		}
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 0;
+		height: 100%;
+		transform: skewX(-35deg);
+		transform-origin: top left;
+		background-color: $button-link-hover-color;
+		transition: width 0.2s ease-in-out;
+	}
+
+	> .heading {
+		color: $text-color-grey;
+		opacity: 0.6;
+	}
+
+	> .text {
+		margin-top: 15px;
+		font-size: rem(16);
+		font-weight: 500;
+		color: $text-color;
+		line-height: 1.5;
+	}
+}

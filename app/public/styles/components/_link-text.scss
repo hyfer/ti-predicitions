@@ -1,7 +1,11 @@
 .link-text {
 	position: relative;
-	color: $white;
+	color: $text-color-inverted;
 	text-decoration: none;
+
+	&.-small {
+		font-size: rem(14);
+	}
 
 	&.-medium {
 		font-size: rem(18);
