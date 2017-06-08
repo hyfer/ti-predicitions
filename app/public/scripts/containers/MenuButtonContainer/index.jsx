@@ -1,9 +1,9 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import toggleMenuOverlay from '../../redux/actions/menuOverlay';
+import toggleMenuOverlay from 'redux/actions/menuOverlay';
 
-import MenuButton from '../../components/MenuButton';
+import MenuButton from 'components/MenuButton';
 
 const mapStateToProps = state => ({
   isToggled: state.menuOverlay.isToggled,

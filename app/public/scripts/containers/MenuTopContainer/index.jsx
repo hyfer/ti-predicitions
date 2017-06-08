@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import MenuButtonContainer from '../MenuButtonContainer';
 import NavigationHorizontal from '../../components/NavigationHorizontal';
-import { Logo, LogoText } from '../../components/SvgImages';
+import { Logo } from '../../components/SvgImages';
 import getScreenWidth from '../../utils/getScreenWidth';
 import debounce from '../../utils/debounce';
 
@@ -68,20 +68,17 @@ class MenuTop extends Component {
 
   render() {
     let menuRight = null;
-    let menuLeft = null;
 
     if (this.state.isCollapsed) {
       menuRight = <MenuButtonContainer />;
-      menuLeft = <Logo />;
     } else {
       menuRight = <NavigationHorizontal />;
-      menuLeft = <LogoText />;
     }
 
     return (
       <div className="menu-top-content">
         <div className="left">
-          {menuLeft}
+          <Logo />
         </div>
         <div className="right">
           {menuRight}

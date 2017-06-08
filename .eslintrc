@@ -7,6 +7,14 @@
   "globals": {
     "document": false
   },
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".scss"],
+    "import/resolver": {
+      "webpack": {
+          "config": "webpack.config.js"
+      }
+    }
+  },
   "rules": {
     "max-len": [1, 120, 2, {
       "ignoreComments": true,

@@ -1,4 +1,4 @@
-# New Humblebee website with React
+# The International predictions
 
 ## Getting started: 
 

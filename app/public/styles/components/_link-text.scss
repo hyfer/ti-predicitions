@@ -1,7 +1,11 @@
 .link-text {
 	position: relative;
-	color: $text-color-inverted;
 	text-decoration: none;
+
+	// Size variants
+	&.-xsmall {
+		font-size: rem(12);
+	}
 
 	&.-small {
 		font-size: rem(14);
@@ -13,7 +17,6 @@
 		@include breakpoint(small) {
 			font-size: rem(24);
 		}
-
 	}
 
 	&.-large {
@@ -22,5 +25,14 @@
 		@include breakpoint(small) {
 			font-size: rem(50);
 		}
+	}
+
+	// Color variants
+	&.-white {
+		color: $text-color-inverted;
+	}
+
+	&.-grey {
+		color: $text-color;
 	}
 }

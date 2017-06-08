@@ -2,10 +2,6 @@
     margin: 0 auto;
     max-width: 100%;
 
-    @include breakpoint(small) {
-        max-width: 640px;
-    }
-
     @include breakpoint(medium) {
         max-width: 960px;
     }

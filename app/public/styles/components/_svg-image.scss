@@ -1,5 +1,10 @@
 .svg-image {
 	&.-logo {
-		fill: $logo-color;
+		width: 40px;
+		height: 41px;
+
+		> .path {
+			fill: $logo-color;
+		}
 	}
 }

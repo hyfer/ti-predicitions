@@ -10,22 +10,28 @@ $light-grey: #dddddd;
 $dark-grey: #22211f;
 
 /* Functional variables */
-$text-color: $black;
-$text-color-grey: $dark-grey;
+
+// Text related
+$text-color: $dark-grey;
 $text-color-inverted: $white;
 $striked-color: $yellow;
 
+// Logo related
 $logo-color: $white;
 
-$button-toggle-color: $white;
-$button-toggle-color-inverted: $black;
+//Button related
+$button-primary-color: $yellow;
 $button-link-border: $light-grey;
 $button-link-hover-color: $yellow;
+$button-toggle-color: $white;
+$button-toggle-color-inverted: $dark-grey;
 
-$button-primary-color: $yellow;
-$badge-color: $yellow;
-
+// Background related
 $navigation-background: $dark-grey;
+
+// Misc
+$badge-color: $yellow;
+$hexagon-color: $yellow;
 
 /* Layout variables */
 $base-gutter-lg: 40px;
@@ -34,7 +40,7 @@ $base-gutter-sm: 30px;
 $base-gutter-xs: 25px;
 $base-gutter: 25px;
 
-$grid-cols: 9;
+$grid-cols: 8;
 
 $container-max-width: 1280px;
 
