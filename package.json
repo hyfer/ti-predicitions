@@ -13,6 +13,7 @@
     "body-parser": "^1.17.1",
     "chokidar": "^1.6.1",
     "containers": "0.0.1",
+    "dota2-api": "^0.2.1",
     "eslint-import-resolver-webpack": "^0.8.1",
     "express": "^4.15.2",
     "prop-types": "^15.5.8",
