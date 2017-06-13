@@ -1,9 +1,9 @@
-const league = require('../models/league.js');
+import { getTournamentList } from '../controllers/league.js';
 
 module.exports = function(app) {
   app.get('/', (req, res) => {
     res.render('home.twig');
   });
 
-  app.get('/league', league.getLeague);
+  app.get('/league', getTournamentList);
 };

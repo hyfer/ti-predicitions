@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "start": "nodemon server.js --exec babel-node --presets es2015,stage-0"
   },
   "author": "",
   "license": "ISC",
@@ -33,6 +33,7 @@
     "twig": "^1.10.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.4.5",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^6.2.1",
