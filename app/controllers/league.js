@@ -32,8 +32,18 @@ export const getTournamentList = (req, res) => {
 	}
 
 	getLeagueListing(function(tournamentArray) {
+		const tournaments = [];
+
 		tournamentArray.forEach(function(tournament) {
-			console.log(trimTournamentName(tournament.name));
+			const tournamentObject = {
+				id: tournament.leagueid,
+				name: trimTournamentName(tournament.name),
+			};
+
+			tournaments.push(tournamentObject);
 		});
+
+		res.send(tournaments);
+
 	});
 };

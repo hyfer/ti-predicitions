@@ -5,5 +5,5 @@ module.exports = function(app) {
     res.render('home.twig');
   });
 
-  app.get('/league', getTournamentList);
+  app.get('/api/league', getTournamentList);
 };
