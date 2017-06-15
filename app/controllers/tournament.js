@@ -1,4 +1,4 @@
-import { getLeagueListing } from '../models/league.js' 
+import { getLeagueListing } from '../models/tournament.js' 
 
 export const getTournamentList = (req, res) => {
 
