@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import MenuTopContainer from 'containers/MenuTopContainer';
 import MenuOverlayContainer from 'containers/MenuOverlayContainer';
+import TournamentsContainer from 'containers/TournamentsContainer';
 
 class Home extends Component {
   render() {
@@ -19,6 +20,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        <TournamentsContainer />
       </div>
     );
   }

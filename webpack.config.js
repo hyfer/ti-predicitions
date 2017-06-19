@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
-    entry: './app/public/app.js',
+    entry: ['babel-polyfill', './app/public/app.js'],
 
     output: {
         path: path.join(__dirname, 'dist'),

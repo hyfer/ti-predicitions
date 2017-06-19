@@ -1,13 +1,26 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { apiMiddleware } from 'redux-api-middleware';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import reducers from './reducers';
+import createSagaMiddleware, { END } from 'redux-saga';
 
-const store = createStore(
-  combineReducers({
-    ...reducers,
-  }),
-  applyMiddleware(thunk, apiMiddleware),
-);
+const sagaMiddleware = createSagaMiddleware();
+const middleware = applyMiddleware(thunk, sagaMiddleware);
+const enhancers = [middleware];
 
-export default store;
+const configureStore = () => {
+  const store = createStore(
+    combineReducers({
+      ...reducers,
+    }),
+    compose(
+      ...enhancers
+    ),
+  );
+
+  store.runSaga = sagaMiddleware.run;
+  store.close = () => store.dispatch(END);
+
+  return store;
+}
+
+export default configureStore;
