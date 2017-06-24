@@ -19,9 +19,10 @@ class TournamentsList extends Component {
     this.props.getTournaments();
   }
 
+
   renderTournaments = tournaments => (
     tournaments.map((tournament) => (
-      <h2 key={tournament.id}>{tournament.name}</h2>
+      <h2>{tournament.name}</h2>
     ))
   );
 

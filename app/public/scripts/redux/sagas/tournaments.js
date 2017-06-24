@@ -21,7 +21,6 @@ const instance = axios.create({
 function* fetchTournaments() {
   try {
     const response = yield call(instance.get, 'http://localhost:8000/api/tournaments');
-    console.log(response.data);
     yield put({ type: GET_TOURNAMENTS_SUCCESS, response: response.data });
   } catch (error) {
     console.log(error);

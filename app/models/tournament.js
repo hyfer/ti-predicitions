@@ -1,5 +1,4 @@
 import api from '../api.js';
-import https from 'https';
 
 export const getLeagueListing = (callback) => {
 	const tournaments = [];

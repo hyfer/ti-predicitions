@@ -6,7 +6,6 @@ import { getTournaments } from 'redux/actions/tournaments';
 import TournamentsList from 'components/TournamentsList';
 
 const mapStateToProps = state => {
-  console.log(state);
   return ({
   tournaments: state.tournamentsData,
   });

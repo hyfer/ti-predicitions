@@ -35,6 +35,7 @@ export const getTournamentList = (req, res) => {
 		const tournaments = [];
 
 		tournamentArray.forEach(function(tournament) {
+			console.log(tournament.leagueid);
 			const tournamentObject = {
 				id: tournament.leagueid,
 				name: trimTournamentName(tournament.name),
