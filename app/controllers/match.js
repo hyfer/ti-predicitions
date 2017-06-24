@@ -1,13 +1,19 @@
 import { getMatchDetails} from '../models/match.js' 
 
 export const getMostPickedHero = (req, res) => {
-	getMatchDetails(function(data) {
-		let picksBans = [];
+  getMatchDetails(function(data) {
+    let picksBans = [];
 
-		for (let i = 0; i < data.length; i++) {
-			picksBans.push(data[i].picks_bans);
-		}
+    for (let i = 0; i < data.length; i++) {
+      let picksBans = data[i].picks_bans;
 
- 		res.send(picksBans);
-	});
+      if (picksBans) {
+        for (let j = 0; j < picksBans.length; j++) {
+           console.log(picksBans[j]);
+        }
+      }
+    }
+
+    res.send(picksBans);
+  });
 };
