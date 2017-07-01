@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import createSagaMiddleware, { END } from 'redux-saga';
 import thunk from 'redux-thunk';
 import reducers from './reducers';
-import createSagaMiddleware, { END } from 'redux-saga';
 
 const sagaMiddleware = createSagaMiddleware();
 const middleware = applyMiddleware(thunk, sagaMiddleware);
@@ -13,7 +13,7 @@ const configureStore = () => {
       ...reducers,
     }),
     compose(
-      ...enhancers
+      ...enhancers,
     ),
   );
 
@@ -21,6 +21,6 @@ const configureStore = () => {
   store.close = () => store.dispatch(END);
 
   return store;
-}
+};
 
 export default configureStore;

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import NavigationVertical from 'components/NavigationVertical';
-
 class MenuOverlay extends Component {
 
   static propTypes = {
@@ -18,8 +16,7 @@ class MenuOverlay extends Component {
 
     return (
       <div className={`menu-overlay ${isToggled}`}>
-        <div className="inner">
-        </div>
+        <div className="inner" />
       </div>
     );
   }

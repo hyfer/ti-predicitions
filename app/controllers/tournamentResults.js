@@ -1,14 +1,18 @@
-import { getMatchDetails} from '../models/match.js';
+import { getMatchDetails} from '../models/matchDetails.js';
 import { getHeroList } from '../models/hero.js';
 
-export const getMostPickedHero = (req, res) => {
+export const getTournamentResults = (req, res) => {
+  const tournamentId = req.params.id;
 
-  getMatchDetails(function(data) {
+  getMatchDetails(tournamentId, function(data) {
     let heroIds = [];
     let heroPickFrequency = {};
     let max = 0;
     let mostPickedHeroId;
-    let mostPickedHero;
+    let tournamentResults = [];
+    let heroes = {
+        mostPicked: null,
+    };
 
     for (let i = 0; i < data.length; i++) {
       let picksBans = data[i].picks_bans;
@@ -33,11 +37,14 @@ export const getMostPickedHero = (req, res) => {
     getHeroList(function(data) {
       for (let i = 0; i < data.length; i++) {
         if (data[i].id === mostPickedHeroId) {
-          mostPickedHero = data[i];
+          heroes.mostPicked = data[i];
         }
       }
 
-      res.send(mostPickedHero);
+      tournamentResults.push(heroes);
+
+      //console.log(getTournamentResults);
+      res.send(tournamentResults);
     });
   });
 };

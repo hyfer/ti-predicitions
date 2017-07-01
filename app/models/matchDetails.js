@@ -42,10 +42,10 @@ const fetchMatchDetails = (matchId) => {
   });
 }
 
-export const getMatchDetails = (callback) => {
+export const getMatchDetails = (tournamentId, callback) => {
   let matchDetailsData = [];
 
-  fetchMatches('4664').then(response => {
+  fetchMatches(tournamentId).then(response => {
     return response.result.matches;
 
   }).map(matches => {
@@ -54,7 +54,7 @@ export const getMatchDetails = (callback) => {
   }).map(matchId => {
     return fetchMatchDetails(matchId);
 
-  }, { concurrency: 50 }).then(matchData => {
+  }, { concurrency: 10 }).then(matchData => {
 
     let matchDataDetails = [];
 
