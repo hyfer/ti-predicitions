@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import MenuButtonContainer from '../MenuButtonContainer';
 import NavigationHorizontal from '../../components/NavigationHorizontal';
-import { Logo } from '../../components/SvgImages';
+import Logo from '../../components/SvgImages';
 import getScreenWidth from '../../utils/getScreenWidth';
 import debounce from '../../utils/debounce';
 

@@ -22,6 +22,6 @@ const getTournaments = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export default getTournaments;

@@ -1,6 +1,5 @@
 import { getTournamentList } from '../controllers/tournament.js';
-import { getMostPickedHero } from '../controllers/match.js';
-import { getHeroList } from '../models/hero.js';
+import { getTournamentResults } from '../controllers/tournamentResults.js';
 
 module.exports = function(app) {
   app.get('/', (req, res) => {
@@ -8,6 +7,5 @@ module.exports = function(app) {
   });
 
   app.get('/api/tournaments', getTournamentList);
-  app.get('/api/matches', getMostPickedHero);
-  //app.get('/api/heroes', getHeroList);
+  app.get('/api/tournament-results/:id', getTournamentResults);
 };
