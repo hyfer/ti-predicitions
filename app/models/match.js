@@ -54,7 +54,7 @@ export const getMatchDetails = (callback) => {
   }).map(matchId => {
     return fetchMatchDetails(matchId);
 
-  }, { concurrency: 50 }).then(matchData => {
+  }, { concurrency: 10 }).then(matchData => {
 
     let matchDataDetails = [];
 
