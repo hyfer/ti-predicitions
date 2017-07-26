@@ -29,19 +29,28 @@ class TournamentsList extends Component {
     this.props.getTournamentResults(tournamentId);
   }
 
-
   renderTournaments = tournaments => (
     tournaments.map((tournament, key) => (
       <button key={key} onClick={() => { this.onClick(tournament.id)} }>{tournament.name}</button>
     ))
   );
 
+  renderTournamentResults = tournamentResults => (
+    tournamentResults.map((tournament, key) => (
+      <div key={key}>
+        <div key={tournament.mostPicked.id}>Most picked: {tournament.mostPicked.name}</div>
+        <div key={tournament.mostBanned.id}>Most banned: {tournament.mostBanned.name}</div>
+      </div>
+    ))
+  );
+
   render() {
-    const { tournaments } = this.props;
+    const { tournaments, tournamentResults } = this.props;
     return (
       <div>
         <h1>Posts</h1>
         {this.renderTournaments(tournaments)}
+        {this.renderTournamentResults(tournamentResults)}
       </div>
     );
   }
