@@ -38,8 +38,9 @@ class TournamentsList extends Component {
   renderTournamentResults = tournamentResults => (
     tournamentResults.map((tournament, key) => (
       <div key={key}>
-        <div key={tournament.mostPicked.id}>Most picked: {tournament.mostPicked.name}</div>
-        <div key={tournament.mostBanned.id}>Most banned: {tournament.mostBanned.name}</div>
+        <div>Most picked: {tournament.mostPicked.name}</div>
+        <div>Most banned: {tournament.mostBanned.name}</div>
+        <div>Highest winrate: {tournament.highestWinrate.name}</div>
       </div>
     ))
   );
